@@ -3,9 +3,26 @@ body{
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#login-box{
-    width:280px;
+.login-box{
+    width: 280px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    padding-left: 240px;
+
+   
+}
+.img-logo{
+    position: relative;
+    top: -50px;
+}
+.div-form{
+    width: 500px;
+    height: 500px;
+    margin-left: 300px;
+}
+.btn{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.textbox{
+    margin-top: 20px;
 }
