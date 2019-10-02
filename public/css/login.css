@@ -7,7 +7,6 @@ body{
     width: 280px;
     position: absolute;
     padding-left: 240px;
-    margin-left: 500px;
 
    
 }
@@ -21,10 +20,9 @@ body{
     margin-left: 300px;
 }
 .btn{
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 80px;
 }
 .textbox{
-    margin-top: 100px;
-
+    margin-top: 20px;
 }
