@@ -1,0 +1,12 @@
+img{
+    position: absolute;
+}
+form{
+    position: absolute;
+    top: 280px;
+    left: 500px;
+}
+
+input {
+    position: absolute;
+}
