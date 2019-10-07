@@ -1,0 +1,23 @@
+body{ 
+    background-color: whitesmoke;
+    margin: 100px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 30px;
+  }
+
+  .table-liste-user{
+    width: 700px; 
+    height: 450px;
+     background-color: lightgray;
+  }
+  #img-logo{
+    width: 50px;
+  }
