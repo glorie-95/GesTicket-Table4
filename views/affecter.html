@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GesTicketSA</title>
+    <link rel="stylesheet" type="text/css" href=../public/css/affecter.css>
+</head>
+
+<body>
+    <div style="border: 6px solid darkcyan;height: 600px;width: 1000px;margin-left: 200px;
+    margin-top: 80px; background-image:url('../public/img/bj1.jpg');background-repeat: no-repeat;background-size: auto 100%;">  
+        <img class="img-logo" src="../public/img/100x116.png" alt="" style="margin-top: 30px;margin-left: 30px;"> 
+        
+        <div>
+            <FORM action ="" method="post">
+                <P>
+                    <LABEL for="session">Session </LABEL>
+                    <select name="session" style="margin-left:30px;width:244px;">
+                        <option value=""> </option>
+                        <option value="presentiel">2017-2018</option>
+                        <option value="online">2018-2019</option>
+                      </select><BR><BR>
+                    <LABEL for="referentiel">Référentiel</LABEL>
+                        <select name="referentiel" style="margin-left:3px;width:244px;">
+                        <option value=""> </option> 
+                        <option value="refdig">Référent digital</option>
+                        <option value="devweb">Développement web</option>
+                        <option value="dataartisan">Data artisan</option>
+                        </select><BR><BR>
+                    <LABEL for="effectif">Effectif</LABEL>
+                    <INPUT type="integer" name="effectif" style="margin-left:38px;"><BR><BR>
+                    <button type='reset' style="background-color: coral; height: 40px; width: 140px;margin-left: 70px;
+                    margin-top: 50px;"><a href="creersession.php">Annuler</a></button>
+                    <button type='submit' style="background-color:#40B573; height: 40px; width: 140px;margin-left: 50px;">Créer</button>
+                </P>
+            </FORM>
+        </div>
+    </div>  
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    position: absolute;
+}
+form{
+    position: absolute;
+    top: 280px;
+    left: 540px;
+}
+
+input {
+    position: absolute;
+}

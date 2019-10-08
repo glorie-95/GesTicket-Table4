@@ -1,12 +1,14 @@
 body{
-    margin: 100px;
+    margin: 10px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../public/img/bj1.png")
 }
+
 .login-box{
-    width: 280px;
+    width: 200px;
     position: absolute;
-    padding-left: 240px;
+    padding-left: 0px;
 
    
 }

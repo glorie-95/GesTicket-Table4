@@ -1,7 +1,17 @@
 body{
-    background-color: whitesmoke;
-    margin: 100px;
-    padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    position: absolute;
+}
+form{
+    position: absolute;
+    top: 280px;
+    left: 500px;
+}
+
+input {
+    position: absolute;
 }
 
