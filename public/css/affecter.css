@@ -11,8 +11,9 @@ form{
 
 input {
     position: absolute;
+    margin-left:100px;
 }
-div {
+.div1 {
     border: 6px solid darkcyan;
     height: 600px;
     width: 1000px;margin-left: 200px;
@@ -22,14 +23,25 @@ div {
     background-size: auto 100%;
 }
 
-ul {
-    padding: 0; margin: 0;
+select  {
+    margin-left:100px;
+    width:244px;
 }
 
-ul li {
-    display: inline-block;
-    float: left;
-    position: relative;
-    padding: 20px 10px; 
-    transition: 0.5s;
+
+.btn1 {
+    background-color: coral; 
+    height: 40px; 
+    width: 140px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.btn2 {
+    background-color:#40B573; 
+    height: 40px; 
+    width: 140px;
+    margin-left: 50px;
+}
+label{
+    position: absolute;
 }

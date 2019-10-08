@@ -9,52 +9,28 @@
 </head>
 
 <body>
-    <div>  
+    <div class="div1">  
         <img class="img-logo" src="../public/img/100x116.png" alt=""> 
-        <ul>
-            <li>
-                    <a href="#">User <i class="fa fa-angle-down"></i></a>
-                    <ul style="">
-                        <li><a style="color:coral;text-decoration:none;text-transform:uppercase;font-wight:700;font-size:16px;" href="#">Nouveau</a></li>
-                        <li><a style="color:coral;text-decoration:none;text-transform:uppercase;font-wight:700;font-size:16px;" href="#">Liste</a></li>
-                    </ul>
-                </li>
-                <li style="display: inline-block;float:left;position: relative;padding: 20px 10px; transition: 0.5s;">
-                        <a href="#">Sessions<i class="fa fa-angle-down"></i></a>
-                        <ul class="sous menu">
-                            <li><a style="color:coral;text-decoration:none;text-transform:uppercase;font-wight:700;font-size:16px;" href="#">Nouveau</a></li>
-                            <li><a style="color:coral;text-decoration:none;text-transform:uppercase;font-wight:700;font-size:16px;" href="#">Liste</a></li>
-                        </ul>
-                        <li style="display: inline-block;float:left;position: relative;padding: 20px 10px; transition: 0.5s;">
-                                <a href="#">Liste Utilisateurs<i class="fa fa-angle-down"></i></a>
-                                <ul class="sous menu">
-                                    <li><a style="color:coral;text-decoration:none;text-transform:uppercase;font-wight:700;font-size:16px;" href="#">Nouveau</a></li>
-                                    <li><a style="color:coral;text-decoration:none;text-transform:uppercase;font-wight:700;font-size:16px;" href="#">Liste</a></li>
-                                </ul>
-                            </li>
-                    </li>
-            </ul>
         <div>
             <FORM action ="" method="post">
                 <P>
-                    <LABEL for="session">Session </LABEL>
-                    <select name="session" style="margin-left:30px;width:244px;">
+                    <LABEL class="label" for="session">Session </LABEL>
+                    <select class="select" name="session">
                         <option value=""> </option>
                         <option value="presentiel">2017-2018</option>
                         <option value="online">2018-2019</option>
                       </select><BR><BR>
-                    <LABEL for="referentiel">Référentiel</LABEL>
-                        <select name="referentiel" style="margin-left:3px;width:244px;">
+                    <LABEL class="label" for="referentiel">Référentiel</LABEL>
+                        <select class="select" name="referentiel">
                         <option value=""> </option> 
                         <option value="refdig">Référent digital</option>
                         <option value="devweb">Développement web</option>
                         <option value="dataartisan">Data artisan</option>
                         </select><BR><BR>
-                    <LABEL for="effectif">Effectif</LABEL>
-                    <INPUT type="integer" name="effectif" style="margin-left:38px;"><BR><BR>
-                    <button type='reset' style="background-color: coral; height: 40px; width: 140px;margin-left: 70px;
-                    margin-top: 50px;"><a href="creersession.php">Annuler</a></button>
-                    <button type='submit' style="background-color:#40B573; height: 40px; width: 140px;margin-left: 50px;">Créer</button>
+                    <LABEL class="label" for="effectif">Effectif</LABEL>
+                    <INPUT type="integer" name="effectif"><BR><BR>
+                    <button class="btn1" type='reset'><a href="creersession.php">Annuler</a></button>
+                    <button class="btn2" type='submit'>Créer</button>
                 </P>
             </FORM>
         </div>
