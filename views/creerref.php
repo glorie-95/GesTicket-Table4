@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Créer référentiel</title>
-    <link rel="stylesheet" type="text/css" href=/var/www/html/gesticketSA/public/css/creerref.css/> 
+    <link rel="stylesheet" type="text/css" href="../public/css/creerref.css"> 
 </head>
 
 
@@ -32,6 +32,7 @@
     </form> 
 
 </div>
+
 
 </body>
 </html>
