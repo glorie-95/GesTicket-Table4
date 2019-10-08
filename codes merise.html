@@ -1,0 +1,62 @@
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+
+
+#------------------------------------------------------------
+# Table: user
+#------------------------------------------------------------
+
+CREATE TABLE user(
+        id         Int  Auto_increment  NOT NULL ,
+        Nom        Varchar (50) NOT NULL ,
+        Prenoms    Varchar (50) NOT NULL ,
+        Profil     Varchar (50) NOT NULL ,
+        Login      Varchar (50) NOT NULL ,
+        Motdepasse Varchar (50) NOT NULL
+	,CONSTRAINT user_PK PRIMARY KEY (id)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: referentiel
+#------------------------------------------------------------
+
+CREATE TABLE referentiel(
+        id            Int  Auto_increment  NOT NULL ,
+        Nom           Varchar (50) NOT NULL ,
+        Anneecreation Year NOT NULL ,
+        id_user       Int NOT NULL
+	,CONSTRAINT referentiel_PK PRIMARY KEY (id)
+
+	,CONSTRAINT referentiel_user_FK FOREIGN KEY (id_user) REFERENCES user(id)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: session
+#------------------------------------------------------------
+
+CREATE TABLE session(
+        id        Int  Auto_increment  NOT NULL ,
+        Nom       Varchar (50) NOT NULL ,
+        Annee     Year NOT NULL ,
+        Datedebut Date NOT NULL ,
+        Datefin   Date NOT NULL
+	,CONSTRAINT session_PK PRIMARY KEY (id)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: affecter
+#------------------------------------------------------------
+
+CREATE TABLE affecter(
+        id             Int NOT NULL ,
+        id_referentiel Int NOT NULL
+	,CONSTRAINT affecter_PK PRIMARY KEY (id,id_referentiel)
+
+	,CONSTRAINT affecter_session_FK FOREIGN KEY (id) REFERENCES session(id)
+	,CONSTRAINT affecter_referentiel0_FK FOREIGN KEY (id_referentiel) REFERENCES referentiel(id)
+)ENGINE=InnoDB;
+
