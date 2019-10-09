@@ -9,6 +9,14 @@
 </head>
 
 <body>
+
+<?php
+include_once('../controlleurs/db_connect.php');
+$query = $pdo->query("SELECT * FROM session");
+$sessions= $query->fetchAll(); 
+$query = $pdo->query("SELECT * FROM referentiel");
+$referentiels= $query->fetchAll();       
+?>
     <div class="div1">  
         <img class="img-logo" src="../public/img/100x116.png" alt=""> 
         <div>
@@ -16,19 +24,27 @@
                 <P>
                     <LABEL class="label" for="session">Session </LABEL> 
                       <select class="select" name="session">
-                      <option value=""> </option> 
-                      <option value="1">champ 1</option> 
-                      <option value="2">champ 2</option> 
-                      <option value="3">champ 3</option> 
+                        <option value=""> </option> 
+                        <?php 
+                    foreach ($sessions as $key => $session) {  
+                    ?>
+                       <option value="<?php echo $session['id'];?>"><?php echo $session['Nom'];?></option> 
+                    <?php
+                     
+                        }
+                    ?>
                       </select><BR><BR>
-
                     <LABEL class="label" for="referentiel">Référentiel</LABEL>
-                    
                         <select class="select" name="referentiel">
                         <option value=""> </option> 
-                        <option value="1">champ 1</option> 
-                        <option value="2">champ 2</option> 
-                        <option value="3">champ 3</option> 
+                        <?php 
+                    foreach ($referentiels as $key => $referentiel) {  
+                    ?>
+                       <option value="<?php echo $referentiel['id'];?>"><?php echo $referentiel['Nom'];?></option> 
+                    <?php
+                     
+                        }
+                    ?>
                         </select><BR><BR>
 
                     <LABEL class="label" for="effectif">Effectif</LABEL>
