@@ -20,7 +20,7 @@ $referentiels= $query->fetchAll();
     <div class="div1">  
         <img class="img-logo" src="../public/img/100x116.png" alt=""> 
         <div>
-            <FORM action ="affecter.php" method="post">
+            <FORM action ="../controlleurs/affecter.php" method="post">
                 <P>
                     <LABEL class="label" for="session">Session </LABEL> 
                       <select class="select" name="session">
