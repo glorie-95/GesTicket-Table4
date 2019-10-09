@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  localhost:3306
--- Généré le :  Lun 07 Octobre 2019 à 09:27
+-- Généré le :  Mar 08 Octobre 2019 à 19:43
 -- Version du serveur :  5.7.27-0ubuntu0.18.04.1
 -- Version de PHP :  7.2.20-1+ubuntu18.04.1+deb.sury.org+1
 
@@ -19,6 +19,31 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `gesticket`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `affecter`
+--
+
+CREATE TABLE `affecter` (
+  `id` int(11) NOT NULL,
+  `id_referentiel` int(11) NOT NULL,
+  `Effectif` int(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `referentiel`
+--
+
+CREATE TABLE `referentiel` (
+  `id` int(11) NOT NULL,
+  `Nom` varchar(50) NOT NULL,
+  `Anneecreation` year(4) NOT NULL,
+  `id_user` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -72,6 +97,20 @@ INSERT INTO `user` (`id`, `Nom`, `Prenoms`, `Profil`, `Login`, `Motdepasse`) VAL
 --
 
 --
+-- Index pour la table `affecter`
+--
+ALTER TABLE `affecter`
+  ADD PRIMARY KEY (`id`,`id_referentiel`),
+  ADD KEY `affecter_referentiel0_FK` (`id_referentiel`);
+
+--
+-- Index pour la table `referentiel`
+--
+ALTER TABLE `referentiel`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `referentiel_user_FK` (`id_user`);
+
+--
 -- Index pour la table `session`
 --
 ALTER TABLE `session`
@@ -88,6 +127,11 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT pour la table `referentiel`
+--
+ALTER TABLE `referentiel`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT pour la table `session`
 --
 ALTER TABLE `session`
@@ -97,6 +141,23 @@ ALTER TABLE `session`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- Contraintes pour les tables exportées
+--
+
+--
+-- Contraintes pour la table `affecter`
+--
+ALTER TABLE `affecter`
+  ADD CONSTRAINT `affecter_referentiel0_FK` FOREIGN KEY (`id_referentiel`) REFERENCES `referentiel` (`id`),
+  ADD CONSTRAINT `affecter_session_FK` FOREIGN KEY (`id`) REFERENCES `session` (`id`);
+
+--
+-- Contraintes pour la table `referentiel`
+--
+ALTER TABLE `referentiel`
+  ADD CONSTRAINT `referentiel_user_FK` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

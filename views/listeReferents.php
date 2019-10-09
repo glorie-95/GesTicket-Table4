@@ -27,7 +27,7 @@
            include_once('../controlleurs/db_connect.php');
           $query = $pdo->query("SELECT * FROM referentiel ");
           $referentiels= $query->fetchAll();
-         // var_dump($users) ;
+         // var_dump($referentiels) ;
         ?>
 <table>
     <thead>
@@ -45,8 +45,8 @@ foreach ($referentiels as $key => $referentiel) {
         <th><?php echo $referentiel['Nom'];?></th>
         <th><?php echo $referentiel['Anneecreation'];?></th>
         <th>
-            <button> <i class="fa fa-edit"></i></button>
-            <button> <i class="fa fa-trash-o"></i></button>
+            <button> <a href="modifRef.php?id=<?php echo $referentiel['id'];?>&Nom=<?php echo $referentiel['Nom'];?>&Anneecreation=<?php echo $referentiel['Anneecreation'];?>"><i class="fa fa-edit"></i> </a></button>
+            <button> <a href="supprimeRef.php?id=<?php echo $referentiel['id'];?>"><i class="fa fa-trash-o"></i> </a></button>
         </th> 
     </tr>
   <?php
