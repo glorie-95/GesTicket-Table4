@@ -6,7 +6,7 @@
 // $sql = "DELETE FROM referentiel WHERE id=$id";
     $sql="DELETE FROM `referentiel` WHERE `referentiel`.`id` = $id";
     
-    $a=$pdo->query($sql);
+    $a=$pdo->exec($sql);
     if ($a) {
       echo"Bravo";
     }
