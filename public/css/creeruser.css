@@ -2,16 +2,69 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-img{
+.div1{
+    border: 6px solid darkcyan;
+    height: 600px;
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 80px; 
+    background-image:url('../public/img/bj1.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.img-logo{
     position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 form{
     position: absolute;
     top: 280px;
     left: 500px;
+    margin-left:250px;
 }
 
 input {
     position: absolute;
 }
 
+h1{
+    position:absolute; 
+    margin-left:300px;
+    margin-top:-50px;
+}
+
+.input1{
+    margin-left:165px;
+}
+.input2{
+    margin-left:133px;
+}
+.select1{
+    margin-left:160px;
+}
+.input3{
+    margin-left:159px;
+}
+.input4{
+    margin-left:100px;
+    margin-top:-2px;
+}
+.input5{
+    margin-left:14px;
+    margin-top:-2px;
+}
+.btn1{
+    background-color: coral; 
+    height: 40px; 
+    width: 140px;
+    margin-left: 180px;
+    margin-top: 50px;
+}
+.btn2{
+    background-color:#40B573; 
+    height: 40px; 
+    width: 140px;
+    margin-left: 50px;
+}
