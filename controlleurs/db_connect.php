@@ -1,6 +1,6 @@
 <?php
    //a)  connexion au SGBD login/Mot de passe Mysql
-         $dsn = 'mysql:host=localhost;dbname=gestionticket;port=3306;charset=utf8';
+         $dsn = 'mysql:host=localhost;dbname=gesticket07102019928;port=3306;charset=utf8';
          //b) Selectionner BD
          try {
  
