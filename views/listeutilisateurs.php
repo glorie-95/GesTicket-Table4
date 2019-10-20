@@ -7,27 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GesTicketSA</title>
     <link rel="stylesheet" type="text/css" href=../public/css/listeutilisateurs.css/>
+    <link rel="stylesheet" type="text/css" href="../public/css/menu.css">
 </head>
-<body>  
+<body>
+<?php include_once('./include/menu.php') ?> 
     <div style="border: 6px solid darkcyan;height: 600px;width: 1000px;margin-left: 200px;
     margin-top: 80px; background-image:url('../public/img/bj1.jpg');background-repeat: no-repeat;background-size: auto 100%;">  
         <h1 style="position:absolute; margin-left:230px;margin-top:100px;">LISTE DES UTILISATEURS</h1>
         <img class="img-logo" src="../public/img/100x116.png" alt="" style="margin-top: 30px;margin-left: 30px;"> 
-        <select name="Sessions" id=""style="position: absolute;
-        margin-top: 30px;
-        margin-left: 300px;
-        background-color: #EB7D06; " >
-            <option value="">+Session</option>
-            <option value="">Liste des Sessions</option>
-        </select>
-         <select name="Sessions" id="" style="margin-left: 1200px;
-         position: absolute;
-         margin-top: 30px;
-         margin-left: 500px;
-         background-color: #40B573;" >
-             <option value="">+Utilisateur</option>
-             <option value="">Liste des Utilisateurs</option>
-         </select>
+      
+           
     <div style="margin-left: 500px;">
            
 

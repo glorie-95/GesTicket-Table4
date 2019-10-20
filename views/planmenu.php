@@ -8,10 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<<<<<<< HEAD
-=======
     <link rel="stylesheet" type="text/css" href=../public/css/listeapp.css>
->>>>>>> 7e75b3f005bc95987e5adc1d29e8d93480b47cb1
   </head>
 
   <body>
@@ -88,111 +85,90 @@
           <div class="row">
             <div class="col"></div>
               <div class="col-6">
-                <h3 class="text-center">LISTE DES APPRENANTS</h3>
-                <button class="btn btn-primary float-right mb-4" type='print'>Imprimer</button>
-                <table class="table table-bordered ">
-                    <thead style="border-collapse: separate">
-                      <tr>
-                        <th scope="col">Nom</th>
-                        <th scope="col">Prénom</th>
-                        <th scope="col">Référentiel</th>
-                        <th scope="col">Session</th>
-                        <th scope="col">Etat</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>BA</td>
-                        <td>Ismaila</td>
-                        <td>Référent digital</td>
-                        <td>Promo 2</td>
-                        <td>Présent</td>
-                      </tr>
-                      <tr>
-                        <td>BA</td>
-                        <td>Ismaila</td>
-                        <td>Référent digital</td>
-                        <td>Promo 2</td>
-                        <td>Présent</td>
-                      </tr>
-                      <tr>
-                        <td>BA</td>
-                        <td>Ismaila</td>
-                        <td>Référent digital</td>
-                        <td>Promo 2</td>
-                        <td>Présent</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  
-              </div>
-              <div class="col">
-
-              <form action="">
-                <h4 class="mt-8">Filtrer par:</h4>
-                <div class="form-group mt-1">
-                  <label class = "d-inline-block mr-2"for="Referentiel">Référentiel</label>
-                    <select class="form-control w-50 d-inline-block" name="" id="">
-                      <option value=""> </option> 
-                      <option value="">Référent digital</option>
-                      <option value="">Développement web</option> 
-                      <option value="">Data Artisan</option> 
-                    </select><br>
-                  <label class = "d-inline-block mr-4 mt-3 ml-1"for="Session">Session</label>
-                    <select class="form-control w-50 d-inline-block" name="" id="">
-                      <option value=""> </option> 
-                      <option value="">Promo 1</option>
-                      <option value="">Promo 2</option> 
-                      <option value="">Promo 3</option> 
-                    </select><br>
-                  <label class = "d-inline-block mr-5 mt-3 ml-2"for="Etat">État</label>
-                  <select class="form-control w-50 d-inline-block" name="" id="">
-                    <option value=""> </option> 
-                    <option value="">Présent</option>
-                    <option value="">Abandon</option> 
-                  </select><br>
-                  <button class="btn btn-primary float-right my-3 mx-5" type='submit'>Trouver</button> 
+                <h3 class="text-center">MENU PAR SEMAINE</h3>  
+                <form action="">
+                <div class="form-group mt-4 ml-5">
+                  <label class = "d-inline-block mr-2"for="Referentiel">Lundi</label>
+                    <input type="checkbox"
+                    name="nom_variable_1"
+                    value="choix1"> Choix 1
+                    <input type="checkbox"
+                    name="nom_variable_2"
+                    value="choix2"> Choix 2
+                    <input type="checkbox"
+                    name="nom_variable_1"
+                    value="choix1"> Choix 3
+                    <input type="checkbox"
+                    name="nom_variable_2"
+                    value="choix2"> Choix 4
+                    <br><br>
+                  <label class = "d-inline-block mr-4 mt-3 ml-1"for="Session">Mardi</label>
+                  <input type="checkbox"
+                    name="nom_variable_1"
+                    value="choix1"> Choix 1
+                    <input type="checkbox"
+                    name="nom_variable_2"
+                    value="choix2"> Choix 2
+                    <input type="checkbox"
+                    name="nom_variable_1"
+                    value="choix1"> Choix 3
+                    <input type="checkbox"
+                    name="nom_variable_2"
+                    value="choix2"> Choix 4
+                    <br><br>
+                  <label class = "d-inline-block mr-5 mt-3 ml-2"for="Etat">Mercredi</label>
+                  <input type="checkbox"
+                    name="nom_variable_1"
+                    value="choix1"> Choix 1
+                    <input type="checkbox"
+                    name="nom_variable_2"
+                    value="choix2"> Choix 2
+                    <input type="checkbox"
+                    name="nom_variable_1"
+                    value="choix1"> Choix 3
+                    <input type="checkbox"
+                    name="nom_variable_2"
+                    value="choix2"> Choix 4
+                    <br><br>
+                  <label class = "d-inline-block mr-5 mt-3 ml-2"for="Etat">Jeudi</label>
+                  <input type="checkbox"
+                    name="nom_variable_1"
+                    value="choix1"> Choix 1
+                    <input type="checkbox"
+                    name="nom_variable_2"
+                    value="choix2"> Choix 2
+                    <input type="checkbox"
+                    name="nom_variable_1"
+                    value="choix1"> Choix 3
+                    <input type="checkbox"
+                    name="nom_variable_2"
+                    value="choix2"> Choix 4
+                    <br><br>
+                  <label class = "d-inline-block mr-5 mt-3 ml-2"for="Etat">Vendredi</label>
+                  <input type="checkbox"
+                    name="nom_variable_1"
+                    value="choix1"> Choix 1
+                    <input type="checkbox"
+                    name="nom_variable_2"
+                    value="choix2"> Choix 2
+                    <input type="checkbox"
+                    name="nom_variable_1"
+                    value="choix1"> Choix 3
+                    <input type="checkbox"
+                    name="nom_variable_2"
+                    value="choix2"> Choix 4
+                    <br><br>
+                  <button class="btn btn-primary float-right my-3 mx-5" type='submit'>Enregistrer</button> 
                 </div>
               </form>
+              </div>
+              <div class="col">
               </div>
             </div>
           </div>
             
 <!--------------------------------------------- FORMULAIRE ---------------------------------------------->
           
-<<<<<<< HEAD
-           
-<style  type="text/css">
-
-.img-fluid {
-    max-width: 50%;
-    height: auto;
-}
-.border-primary {
-    border-color: darkcyan!important;;
-}
-.bg-primary {
-    background-color: darkcyan!important;
-}
-
-#navbarDropdown{
-    color: white;
-}
-
-.btn-primary{
-    background-color: coral!important;
-}
-
-table table-bordered{
-  border-collapse: separate;
-}
-.mt-8 {
-    margin-top: 7rem !important;
-}
-
-</style>
-=======
->>>>>>> 7e75b3f005bc95987e5adc1d29e8d93480b47cb1
 
 
     <!-- Optional JavaScript -->

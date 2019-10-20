@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GesTicketSA</title>
     <link rel="stylesheet" type="text/css" href=../public/css/affecter.css>
+    <link rel="stylesheet" type="text/css" href="../public/css/menu.css">
 </head>
 
 <body>
-
+<?php include_once('./include/menu.php') ?>
 <?php
 include_once('../controlleurs/db_connect.php');
 $query = $pdo->query("SELECT * FROM session");

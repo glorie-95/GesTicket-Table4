@@ -14,7 +14,12 @@ if(!empty($_POST['session']) and !empty($_POST['referentiel']) and !empty($_POST
     //3-Traitement => Connexion dans une BD
             include_once('db_connect.php');
             //var_dump("INSERT INTO `affecter` VALUES ($session,$referentiel,$effectif)"); die();
+            // $sql="INSERT INTO `affecter` VALUES (?,?,?)";
+            // $req=$pdo->prepare($sql);
+            // $req->execute(array($session,$referentiel,$effectif));
+            var_dump("INSERT INTO `affecter` VALUES ($session,$referentiel,$effectif)");die();
             $req = $pdo->exec("INSERT INTO `affecter` VALUES ($session,$referentiel,$effectif)");   
+            
             header("Location: ../views/listeReferents.php");
         }
     else{

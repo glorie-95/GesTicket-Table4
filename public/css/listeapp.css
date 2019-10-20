@@ -1,0 +1,25 @@
+.img-fluid {
+    max-width: 50%;
+    height: auto;
+}
+.border-primary {
+    border-color: darkcyan!important;;
+}
+.bg-primary {
+    background-color: darkcyan!important;
+}
+
+#navbarDropdown{
+    color: white;
+}
+
+.btn-primary{
+    background-color: coral!important;
+}
+
+table table-bordered{
+  border-collapse: separate;
+}
+.mt-8 {
+    margin-top: 7rem !important;
+}

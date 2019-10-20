@@ -1,0 +1,44 @@
+.div1{
+    border: 6px solid darkcyan;
+    height: 600px;
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 80px; 
+    background-image:url('../public/img/bj1.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.img-logo{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+h1{
+    position:absolute; 
+    margin-left:300px;
+    margin-top:0px;
+}
+P{
+    margin-left: 300px;
+    margin-top: 90px;
+}
+
+.input1{
+    margin-left:80px;
+}
+.input2{
+    margin-left:30px;
+}
+.btn1
+{
+    background-color: coral; 
+    height: 40px; 
+    width: 140px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.btn2{
+    background-color:#40B573; 
+    height: 40px; 
+    width: 140px;
+    margin-left: 50px;
+}

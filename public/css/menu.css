@@ -1,0 +1,39 @@
+#menu ul{
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    margin-left: 590px
+}
+#menu li{
+    list-style:none;
+    float: left;
+    position: relative;
+    background-color: cadetblue;
+    
+}
+#menu ul li a{
+    color: rgb(250, 250, 250);
+    text-decoration:none;
+    width: 150px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    border: 1px solid white;
+   margin-left: 0px
+}
+#menu ul ul{
+    position: absolute;
+    top: 31px;
+    visibility: hidden;
+    left: -590px;
+}
+#menu ul li:hover ul{
+    visibility: visible;
+}
+#menu li:hover{
+    background-color: coral;
+}
+#menu ul li ul a:hover{
+    color: cadetblue;
+    background-color: coral;
+}
