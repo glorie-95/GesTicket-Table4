@@ -1,10 +1,10 @@
 <?php
    //a)  connexion au SGBD login/Mot de passe Mysql
-         $dsn = 'mysql:host=localhost;dbname=gesticket;port=3306;charset=utf8';
+         $dsn = 'mysql:host=localhost;dbname=gestionticket;port=3306;charset=utf8';
          //b) Selectionner BD
          try {
  
-            $pdo = new PDO($dsn, 'root' , 'Glorie@1');
+            $pdo = new PDO($dsn, 'niokhor' , 'touba');
             
             }
             catch (PDOException $exception) {
